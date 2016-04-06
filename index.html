@@ -198,6 +198,73 @@
 
       <div class="body-wrap">
   
+    <article id="post-使用HexoDIY自己的博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/06/使用HexoDIY自己的博客/" class="article-date">
+  	<time datetime="2016-04-06T07:58:35.000Z" itemprop="datePublished">2016-04-06</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/06/使用HexoDIY自己的博客/">使用HexoDIY自己的博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>hexo是一个基于Node.js的快速，简单和强大的博客框架。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>刚刚说了是基于Node.js的，所以要先安装<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>，直接到<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js官网</a>下载想要的版本安装即可</p>
+<p>安装完node.js就直接打开终端输入 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h2 id="快速建立博客"><a href="#快速建立博客" class="headerlink" title="快速建立博客"></a>快速建立博客</h2><p>继续在终端输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
+<p>新建一篇文章<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"Hello Hexo"</span></span><br></pre></td></tr></table></figure></p>
+<p>生成静态页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>启动hexo的服务器查看效果<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h2 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h2><p>默认的主题实在是太丑了，我使用的是<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">yilia</a></p>
+<h2 id="部署到github上"><a href="#部署到github上" class="headerlink" title="部署到github上"></a>部署到github上</h2><p>修改blog目录下的_config.yml<br>中的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/MichaelCraneVONG/michaelcranevong.github.com.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>把repository改为你自己的github博客的git</p>
+<p>然后执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>之后执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>然后按要求输入你github的username和password等几分钟看到下面这些就行了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">To https://github.com/MichaelCraneVONG/michaelcranevong.github.com.git</span><br><span class="line">   e350405..e203204  HEAD -&gt; master</span><br><span class="line">Branch master set up to track remote branch master from https://github.com/MichaelCraneVONG/michaelcranevong.github.com.git.</span><br><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
